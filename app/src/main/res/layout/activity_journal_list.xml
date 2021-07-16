@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light"
+    tools:context=".JournalListActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <include layout="@layout/toolbar"
+           android:id="@+id/listToolbar"/>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/post_rv"
+           android:layout_width="match_parent"
+           android:layout_height="681dp"
+           android:layout_below="@+id/listToolbar"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/listToolbar"
+           app:layout_constraintVertical_bias="1.0" />
+   </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
